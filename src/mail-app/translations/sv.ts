@@ -13,7 +13,7 @@ export default {
 		"other"
 	],
 	"created_at": "2015-03-23T11:36:16Z",
-	"updated_at": "2025-02-07T17:24:30Z",
+	"updated_at": "2025-02-20T11:57:07Z",
 	"source_locale": null,
 	"fallback_locale": null,
 	"keys": {
@@ -411,12 +411,11 @@ export default {
 		"credit_label": "Kredit",
 		"currentBalance_label": "Aktuellt kontosaldo",
 		"currentlyBooked_label": "Abonnemangsöversikt",
-		"currentPlanDiscontinued_msg": "Ditt nuvarande abonnemang är inte längre tillgänglig. Välj mellan de planer som visas nedan.",
+		"currentPlanDiscontinued_msg": "Din nuvarande plan är inte längre tillgänglig. Välj mellan de planer som visas nedan.",
 		"customColorsInfo_msg": "Om du lämnar ett tomt fält används färgen från standardtemat ljus istället.",
 		"customColors_label": "Anpassade färger",
 		"customColor_label": "Anpassad färg",
 		"customDomainDeletePreconditionFailed_msg": "Avaktivera alla användare och e-postadresser som innehåller domänen: {domainName}.",
-		"customDomainDeletePreconditionWhitelabelFailed_msg": "Avaktivera alla användare och e-postadresser som innehåller domänen: {domainName} och ta bort domänen som registrerad e-post domän.\n",
 		"customDomainErrorDnsLookupFailure_msg": "DNS-kontroll misslyckades.",
 		"customDomainErrorDomainNotAvailable_msg": "Domänen är inte tillgänglig.",
 		"customDomainErrorDomainNotFound_msg": "Vi kunde inte hitta den här domänen i DNS. Kontrollera stavningen.",
@@ -1011,6 +1010,7 @@ export default {
 		"matchingKeywords_label": "Matchande nyckelord:",
 		"maximumLabelsPerMailReached_msg": "Maximalt antal tillåtna etiketter per mejl har uppnåtts.",
 		"maybeAttending_label": "Kanske delta i",
+		"maybeLater_action": "Kanske senare",
 		"maybe_label": "Kanske",
 		"menu_label": "Meny",
 		"mergeAllSelectedContacts_msg": "Är du säker på att du vill sammanfoga de markerade kontakterna?",
@@ -1401,8 +1401,11 @@ export default {
 		"quit_action": "Avsluta",
 		"rateAppStore_action": "Betygsätt på App Store",
 		"rateGooglePlay_action": "Betygsätt på Google Play",
-		"ratingExplanation_msg": "Oavsett om du älskar Tuta eller tycker att vi kan bli bättre låt oss få veta det!",
-		"ratingHowAreWeDoing_title": "Vad tycker du om Tuta?",
+		"rateUs_action": "Betygsätt oss",
+		"ratingExplanation_msg": "Oavsett om du gillar appen eller tycker att vi kan göra den bättre, låt oss veta det.",
+		"ratingGooglePlay_msg": "Vill du dela med dig om oss? Ta en stund och betygsätt oss på Google Play.",
+		"ratingGooglePlay_title": "Vi är så glada att du gillar Tuta!",
+		"ratingHowAreWeDoing_title": "Din åsikt är viktig!",
 		"ratingLoveIt_label": "Älskar den!",
 		"ratingNeedsWork_label": "Behöver förbättras",
 		"readResponse_action": "Läs svar",
@@ -1921,6 +1924,8 @@ export default {
 		"yourCalendars_label": "Dina kalendrar",
 		"yourFolders_action": "DINA MAPPAR",
 		"yourMessage_label": "Ditt meddelande",
-		"you_label": "Du"
+		"you_label": "Du",
+		"zoomIn_action": "Zooma in",
+		"zoomOut_action": "Zooma ut"
 	}
 }

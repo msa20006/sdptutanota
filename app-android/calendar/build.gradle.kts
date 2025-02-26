@@ -18,8 +18,8 @@ android {
 		applicationId = "de.tutao.calendar"
 		minSdk = 26
 		targetSdk = 34
-		versionCode = 93
-		versionName = "270.250213.0"
+		versionCode = 96
+		versionName = "271.250220.0"
 
 		testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
 
@@ -179,13 +179,17 @@ dependencies {
 	// For Kotlin use kapt instead of annotationProcessor
 	kapt("androidx.room:room-compiler:$room_version")
 
-	if (file("../libs/android-database-sqlcipher-4.5.0.aar").exists()) {
-		val includes: Map<String, Any> = mapOf("include" to arrayOf("*.aar"), "dir" to "../libs")
-		implementation(fileTree(includes))
+	if (file("../libs/sqlcipher-android-4.6.0.aar").exists()) {
+		logger.lifecycle("Using prebuild sqlcipher file in ../libs")
+		// "Direct local .aar file dependencies are not supported when building an AAR. The resulting AAR would be
+		// broken because the classes and Android resources from any local .aar file dependencies would not be packaged
+		// in the resulting AAR. Previous versions of the Android Gradle Plugin produce broken AARs in this case too
+		// (despite not throwing this error)."
+		implementation(files("../libs/sqlcipher-android-4.6.0.aar"))
 	} else {
-		implementation("net.zetetic:android-database-sqlcipher:4.5.0")
+		logger.lifecycle("Using sqlcipher from remote repository")
+		implementation("net.zetetic:sqlcipher-android:4.6.0@aar")
 	}
-	implementation("androidx.sqlite:sqlite:2.0.1")
 
 	implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.4.1")
 	implementation("androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version")

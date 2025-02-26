@@ -13,7 +13,7 @@ export default {
 		"other"
 	],
 	"created_at": "2015-01-13T20:40:31Z",
-	"updated_at": "2025-02-07T14:39:28Z",
+	"updated_at": "2025-02-18T15:05:00Z",
 	"source_locale": {
 		"id": "fcd7471b347c8e517663e194dcddf237",
 		"name": "en",
@@ -420,7 +420,6 @@ export default {
 		"customColors_label": "Eigene Farben",
 		"customColor_label": "Benutzerdefinierte Farbe",
 		"customDomainDeletePreconditionFailed_msg": "Bitte deaktiviere zunächst alle Benutzer*innen und alle E-Mail-Adressen mit der Domain: {domainName}.",
-		"customDomainDeletePreconditionWhitelabelFailed_msg": "Bitte deaktiviere zunächst alle Benutzer und alle E-Mail-Adressen mit der Domain: {domainName} und entferne die Domain als Registrierungs-Domain.",
 		"customDomainErrorDnsLookupFailure_msg": "Fehler beim Abfragen der DNS-Informationen.",
 		"customDomainErrorDomainNotAvailable_msg": "Diese Domain ist nicht verfügbar.",
 		"customDomainErrorDomainNotFound_msg": "Wir können diese Domain im DNS nicht finden. Bitte prüfe den Domain-Namen.",
@@ -1015,6 +1014,7 @@ export default {
 		"matchingKeywords_label": "Übereinstimmende Schlüsselwörter",
 		"maximumLabelsPerMailReached_msg": "Maximum der erlaubten Labels pro E-Mail erreicht.",
 		"maybeAttending_label": "Veilleicht teilnehmen",
+		"maybeLater_action": "Vielleicht später",
 		"maybe_label": "Vielleicht",
 		"menu_label": "Menü",
 		"mergeAllSelectedContacts_msg": "Bist du sicher, dass du die ausgewählten Kontakte zusammenführen möchtest?",
@@ -1405,7 +1405,10 @@ export default {
 		"quit_action": "Beenden",
 		"rateAppStore_action": "Bewerte im App-Store",
 		"rateGooglePlay_action": "Bewerte auf Google Play",
+		"rateUs_action": "Bewerte uns",
 		"ratingExplanation_msg": "Ob du Tuta liebst oder meinst, wir könnten etwas verbessern, lass es uns wissen!",
+		"ratingGooglePlay_msg": "Möchtest du die Liebe teilen? Bitte nimm dir einen Moment Zeit und bewerte uns auf Google Play.",
+		"ratingGooglePlay_title": "Wir freuen uns, dass dir Tuta so gut gefällt!",
 		"ratingHowAreWeDoing_title": "Wie gefällt dir Tuta?",
 		"ratingLoveIt_label": "Ich liebe es!",
 		"ratingNeedsWork_label": "Braucht Arbeit",
@@ -1925,6 +1928,8 @@ export default {
 		"yourCalendars_label": "Deine Kalender",
 		"yourFolders_action": "DEINE ORDNER",
 		"yourMessage_label": "Deine Nachricht",
-		"you_label": "Du"
+		"you_label": "Du",
+		"zoomIn_action": "Hereinzoomen",
+		"zoomOut_action": "Herauszoomen"
 	}
 }
