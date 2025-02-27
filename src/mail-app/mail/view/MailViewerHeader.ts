@@ -682,6 +682,15 @@ export class MailViewerHeader implements Component<MailViewerHeaderAttrs> {
 			return null
 		}
 
+	    // Define the new Moby-Phish button behavior for testing view
+	    const mobyPhishButton: BannerButtonAttrs = {
+	        label: "Known Sender",
+	        click: () => {
+	            console.log("Moby-Phish button clicked");
+	            // Placeholder logic for now, just logs the click
+	        }
+	    };
+
 		const showButton: BannerButtonAttrs = {
 			label: "showBlockedContent_action",
 			click: () => attrs.viewModel.setContentBlockingStatus(ContentBlockingStatus.Show),
@@ -717,7 +726,7 @@ export class MailViewerHeader implements Component<MailViewerHeaderAttrs> {
 			message: "contentBlocked_msg",
 			icon: Icons.Picture,
 			helpLink: canSeeTutaLinks(attrs.viewModel.logins) ? InfoLink.LoadImages : null,
-			buttons: [showButton, ...maybeDropdownButtons],
+			buttons: [showButton, mobyPhishButton, ...maybeDropdownButtons],
 		})
 	}
 
