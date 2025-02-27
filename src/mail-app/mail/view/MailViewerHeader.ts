@@ -684,7 +684,7 @@ export class MailViewerHeader implements Component<MailViewerHeaderAttrs> {
 
 	    // Define the new Moby-Phish button behavior for testing view
 	    const mobyPhishButton: BannerButtonAttrs = {
-	        label: "Known Sender",
+	        label: lang.get("Known Sender"),
 	        click: () => {
 	            console.log("Moby-Phish button clicked");
 	            // Placeholder logic for now, just logs the click
